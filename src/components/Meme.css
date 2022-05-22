@@ -1,0 +1,31 @@
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    padding: 0 50px;
+}
+
+.form-button {
+    grid-column: 1 / -1;
+}
+
+.form-input {
+    font-family: "Roboto", sans-serif;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: 1.5px solid #D5D4D8;
+    text-indent: 20px;
+    
+}
+
+.form-button {
+    grid-column: 1 / -1;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    background: linear-gradient(90.41deg, #0c0261 1.18%, #1501ca 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
