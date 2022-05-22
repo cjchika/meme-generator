@@ -1,16 +1,17 @@
 import React from "react";
-import Logo from '../Images/Logo.png'
-import './Navbar.css'
+import Logo from "../images/TrollFace.png"
+import "./Navbar.css"
 
 const Navbar = () => {
 	return (
-		<div>
-			<nav>
-				<img src={Logo} alt="" className="nav-logo"/>
-				<h4 className="nav-title">My Travel Journal</h4>
-			</nav>
-		</div>
-	)
+		<nav>
+			<div className="logo-container">
+				<img src={Logo} alt="" />
+				<h1 className="title">Meme Generator</h1>
+			</div>
+			<p className="sub-title">React Course - Project 3</p>
+		</nav>
+	)  
 }
 
 export default Navbar;
