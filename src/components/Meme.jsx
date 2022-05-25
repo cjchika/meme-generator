@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Meme.css'
 import MemesData from "./MemesData";
 
-const Meme = () => {
+const Meme = (props) => {
 	const [meme, setMeme] = useState({topText: "", bottomText: "", randomImage: ""});
 	const [allMemeImages, setAllMemeImages] = useState(MemesData)
 
