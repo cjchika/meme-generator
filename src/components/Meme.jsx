@@ -17,16 +17,18 @@ const Meme = (props) => {
 	}
 
 	return (
-		<div>
-			<div action="submit" className="form">
+		<main>
+			<div className="form">
 					<input type="text" className="form-input" placeholder="Top Text"/>
 					<input type="text" className="form-input" placeholder="Bottom Text"/>
 					<button className="form-button" onClick={getMemeImage}>Get a new meme image 🖼</button>
-					<div className="image-container">
-						<img src={meme.randomImage} alt="" />
-					</div>
 			</div>
-		</div>
+			<div className="meme">
+				<img src={meme.randomImage} className="meme--image" alt="" />
+				<h2 className="meme--text top">One does not simply</h2>
+				<h2 className="meme--text bottom">Walk into Mordor</h2>
+			</div>
+		</main>
 	)
 };
 
